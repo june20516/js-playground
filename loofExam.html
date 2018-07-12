@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    //1~100까지 짝수일 때만 더하기 ///
+      // var i = 1;
+      // var sum = 0;
+      // while( i<=100 ) {
+      //   if(i%2===0) {
+      //   sum=sum+i;
+      //   document.write(i+", "+sum+'</br>');
+      //   }else {
+      //   document.write(i+", "+'</br>');
+      //   }
+      //   i++;
+      // }
+    //100~0까지 출력하는 프로그램 ///
+      // for(var j = 100; j>=0; j--) {
+      //   document.write(j+'</br>')
+      // }
+    //입력하는 수의 개수와 합 표시//
+    var sum = 0;
+    var n = -1;
+    var count = -1;
+    while(n != 0) {
+        n = Number(prompt("숫자를 입력해 주세요(0 = 종료)"));
+        sum += n;         
+        count++;
+        console.log(count, n, sum);
+    }
+    document.write("입력한 " +  count + "수의 합은 " +  sum + "입니다.");
+    </script>
+  </body>
+</html>

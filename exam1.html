@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <h1>연습문제 1</h1>
+  </head>
+  <body>
+    <h2>두 수를 입력받아 4칙연산의 결과를 표시해 봅시다.</h2>
+    <p>
+      <script>
+      function getNumber(){
+        var input1 = prompt("첫번째 숫자를 입력해주세요.");
+        var n1 = Number(input1);
+        alert("입력한 숫자는"+n1+" 입니다.");
+        var input2 = prompt("두번째 숫자를 입력해주세요.");
+        var n2 = Number(input2);
+        alert("입력한 숫자는"+n2+" 입니다.");
+      }
+      function getTmp(){
+        var input3 = prompt("화씨(°F )를 입력해주세요");
+        var n3 = Number(input3);
+        alert("섭씨(°C )는" + (n3-32)/1.8 + " 입니다.");
+      }
+
+      </script>
+      <input type="button" value="숫자를 입력하세요." onclick="getNumber()">
+
+      <br> 연산을 선택하세요. <br>
+      <input type="button" value="+" onclick="alert(input1+' + '+input2+' = '+(n1+n2))">
+      <input type="button" value="-" onclick="
+      alert(input1 + ' - ' + input2 + ' = ' + (n1 - n2))
+      ">
+      <input type="button" value="*" onclick="
+      alert(input1 + ' * ' + input2 + ' = ' + (n1 * n2))
+      ">
+      <input type="button" value="/" onclick="
+      alert(input1 + ' / ' + input2 + ' = ' + (n1 / n2))
+      ">
+      <input type="button" value="%" onclick="
+      alert(input1 + ' % ' + input2 + ' = ' + (n1 % n2))
+      ">
+    </p>
+
+    <h2>BMI를 계산하는 프로그램을 작성해 봅시다.</h2>
+    <input type="button" value="BMI 계산하기" onclick="
+    var m = prompt('키(cm)를 입력하세요.');
+    var m2 = Number(m) / 100
+    var kg = prompt('몸무게(kg)를 입력하세요.');
+    var kg2 = Number(kg)
+    alert('당신의 BMI는 ' + kg2 / (m2 * m2) + ' 입니다.')">
+    <h2>화씨를 입력받아서 섭씨로 바꾸는 프로그램을 작성해 봅시다.</h2>
+    <input type="button" value="변환:화씨-섭씨" onclick="
+    getTmp()">
+    <h2>입력한 문자열의 길이를 알려주는 프로그램을 작성해 봅시다.</h2>
+    <p>
+    <input type="button" value="text 입력" onclick="
+    var input4 = prompt('아무 말이나 넣어 주세요.');
+    var n4 = input4.length;
+    alert(n4);
+    ">
+    </p>
+  </body>
+</html>
