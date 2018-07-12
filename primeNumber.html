@@ -2,12 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Find prime number</title>
   </head>
   <body>
+    <h1>소수 판별 프로그램</h1>
     <script>
     var i=1;
-    var n=Number(prompt("숫자를 입력하세요."));
+    var n=Number(prompt("확인할 숫자를 입력하세요."));
     var ans=-1
     while( ans!=0 ) {
       var ans = n % (i+1);
@@ -17,7 +18,7 @@
     if ( n === i )  {
       document.write("입력하신 " + n + " 는 소수입니다.");
     } else {
-      document.write("입력하신 " + n + " 는 소수가 아닙니다.");
+      document.write("입력하신 " + n + " 는 소수가 아닙니다.("+i+"로 나누어집니다)");
     }
     </script>
   </body>
