@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <script>
+    function Gugudan() {
+      var n = document.getElementById("stage").value;
+      document.write("구구단 " + n + " 단" + "<br>");
+      for (i = 1; i <= 9; i++) {
+        document.write( n + " * " + i + " = " + n*i + "<br>");
+      }
+    }
+  </script>
+  <body>
+    출력할 단수 :
+    <span>
+    <input type="text" id="stage">
+    <button onclick="Gugudan()"> 확인 </button>
+    </span>
+  </body>
+</html>
