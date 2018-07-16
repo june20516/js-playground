@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>gugudan 8</title>
+  </head>
+  <body>
+    <h1>if 문 사용하여 구구단 구현</h1>
+    출력할 단 : <input type="text" id="num">
+    <button onclick="Display()">확인</button>
+    <script>
+      function Display() {
+        var str = document.getElementById('num').value;
+        var n = Number(str);
+        if (n <2 || n>9 ) {
+          alert("!2단부터 9단까지만 입력해주세요!");
+          location.reload();
+        }else{
+          document.write("<h2>"+"구구단 "+n+" 단"+"</h2>");
+          for (i = 1; i<10; i++) {
+          document.write( n + " * " + i + " = " + n*i + "<br>");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
