@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    *세 자리수 숫자를 입력해 주세요! <br>
+    <input type="text" id="ipt">
+    <button onclick="Cal()">제출</button>
+
+    <script>
+//문제 생성
+      var num = [];
+      for (i = 0; i < 3; i++) {
+        num.push(Math.floor(Math.random() * 10));
+      }
+      console.log(num);
+//답안 생성
+      var ans = [];
+      function Cal() {
+        var sm = document.getElementById('ipt').value;
+        var nm = Number(sm);
+        for ( q = 0; q<3; q++) {
+          ans.unshift(Math.floor((nm / 10**q) %10 ));
+        }
+        console.log(ans);
+//검증
+      }
+
+
+
+    </script>
+  </body>
+</html>
